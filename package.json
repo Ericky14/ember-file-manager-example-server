@@ -1,0 +1,24 @@
+{
+  "name": "server",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "assert": "^1.4.1",
+    "basicauth-middleware": "^2.0.0",
+    "body-parser": "*",
+    "cookie-parser": "^1.4.3",
+    "express": "*",
+    "imagemagick": "^0.1.3",
+    "mongodb": "^2.2.24",
+    "multer": "^1.3.0",
+    "passport": "*",
+    "passport-ldapauth": "*",
+    "underscore": "^1.8.3"
+  }
+}
