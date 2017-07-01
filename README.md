@@ -5,7 +5,7 @@ https://github.com/Ericky14/ember-file-manager
 
 To properly work, the server might need some changes as it was originally designed based on the use for a specific project. Anyone is free to contribute to it.
 
-The backend DB is mongoDB.
+The backend DB is mongoDB and it uses LDAP to authenticate users.
 
 ## Notes
 
@@ -31,13 +31,13 @@ var OPTS = {
 *In config/environment.js of the ember app:
 ```
 contentSecurityPolicy: {
-      'connect-src': "'self' http://192.168.56.101:8080" //put your nodejs server's host machine ip here, probably localhost:port, but since I used virtualbox, I used its ip
+      'connect-src': "'self' http://localhost:8080" //put your nodejs server's host machine ip here, probably localhost:port, but since I used virtualbox, I used its ip
 },
 ```
 
 *In app/templates/index.hbs of the ember app:
 ```
-<form action="http://192.168.56.101:8080/login" method="POST">  //just change the ip in this line to that of the nodejs server
+<form action="http://localhost:8080/login" method="POST">  //just change the ip in this line to that of the nodejs server
   <div>
     <input name="username" placeholder="username" />
   </div>
